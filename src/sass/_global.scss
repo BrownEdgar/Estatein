@@ -1,0 +1,35 @@
+@import "./color";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Urbanist";
+  src: url("./fonts/Urbanist-Bold.ttf");
+  src: url("./fonts/Urbanist-Light.ttf");
+  src: url("./fonts/Urbanist-Regular.ttf");
+  src: url("./fonts/Urbanist-SemiBold.ttf");
+  src: url("./fonts/Urbanist-Thin.ttf");
+}
+
+body {
+  font-family: "Urbanist";
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: $main-bg;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Urbanist";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+  color: $main-text-color;
+}
