@@ -1,0 +1,124 @@
+.App {
+    &_container {
+        display: flex;
+        background-color: #141414;
+        width: 100%;
+        height: 806px;
+        top: 162px;
+        gap: 0px;
+    }
+    &_contain {
+        width: 100%;
+        gap: 80px;
+    }
+    &_deepContent {
+        width: 100%;
+        padding: 0px 0px 0px 162px;
+        gap: 60px;
+    }
+    &_textContent {
+        width: 784px;
+        gap: 24px;
+    }
+    &_heading {
+        width: 100%;
+        margin-top: 110px;
+        font-size: 60px;
+        gap: 0px;
+        font-family: "Urbanist", sans-serif;
+        color: #FFFFFF;
+        opacity: 0px;
+        font-weight: 600;
+        line-height: 62px;
+        text-align: left;
+    }
+    &_paragraph {
+        width: 758px;
+        // height: 47px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: "Urbanist", sans-serif;
+        color: #999999;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        text-align: left;
+    }
+    &_buttons {
+        width: 100%;
+        margin: 50px auto;
+    }
+    &_head {
+        width: 140px;
+        height: 60px;
+        gap: 8px;
+        color: #FFFFFF;
+        border-radius: 12px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        background-color: #141414;
+    }
+    &_includes {
+        height: 27px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: "Urbanist", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 17px;
+        text-align: center;
+    }
+    &_btn {
+        width: 170px;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 12px;
+        margin-left: 26px;
+        background-color: #703BF7;
+        color: #FFFFFF;
+        gap: 8px;
+        opacity: 0px;
+        font-weight: 600;
+    }
+    &_include {
+        width: 143px;
+        height: 27px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: "Urbanist", sans-serif;
+    }
+    &_score {
+        display: flex;
+        gap: 20px;
+    }
+    &_text {
+        width: 204px;
+        height: 80px;
+        padding: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        border-radius: 12px;
+        border: 3px solid #262626;
+        background: #1A1A1A;
+        font-family: "Urbanist", sans-serif;
+        color: #999999;
+    }
+    &_number {
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    &_bgImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_image {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 882px;
+        background-repeat: no-repeat;
+        height: 814px;
+        background: linear-gradient(238.21deg, #2A213F 8.76%, rgba(25, 25, 25, 0) 50.09%);
+    }
+}
