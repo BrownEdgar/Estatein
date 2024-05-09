@@ -1,4 +1,5 @@
 import { SliderProperties } from "./properties__slider/Properties_slider";
+import { Button } from '@/Button/Button';
 
 import "./Properties.scss";
 
@@ -19,7 +20,9 @@ export const Properties = () => {
               information.
             </p>
           </div>
-          <div className="properties__btn">View All Properties</div>
+          <Button className={"custom-btn dark-btn"} link={"!#"}>
+            View All Properties
+          </Button>
         </div>
         <div className="properties__slider">
           <SliderProperties />

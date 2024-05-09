@@ -1,6 +1,7 @@
 @import "../../sass/color";
 
 .custom-btn {
+  font-family: "Urbanist";
   display: inline-block;
   border-radius: 0.8rem;
   color: $absolute-white;
@@ -9,12 +10,20 @@
   transition: all 0.23s ease 0s;
   cursor: pointer;
   &.dark-btn {
+
+    display: inline-block;
     border: 1px solid $grey-15;
-    padding: 1rem 1.5rem;
-    background: $grey-08;
+    border-radius: 10px;
+    padding: 18px 24px;
+
+    background: $grey-10;
+    font-size: 18px;
+    color: $absolute-white;
+    white-space: nowrap;
+    cursor: pointer;
 
     &:hover {
-      background-color: $grey-10;
+      background-color: $grey-15;
     }
   }
 
