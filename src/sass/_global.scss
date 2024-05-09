@@ -18,11 +18,13 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   background-color: $main-bg;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 1600px;
   margin: 0 auto;
+  padding-inline: 15px;
 }
 
 h1 {
