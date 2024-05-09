@@ -1,0 +1,30 @@
+@import "../../sass/color";
+
+.custom-btn {
+  display: inline-block;
+  border-radius: 0.8rem;
+  color: $absolute-white;
+  font-size: 18px;
+  white-space: nowrap;
+  transition: all 0.23s ease 0s;
+  cursor: pointer;
+  &.dark-btn {
+    border: 1px solid $grey-15;
+    padding: 1rem 1.5rem;
+    background: $grey-08;
+
+    &:hover {
+      background-color: $grey-10;
+    }
+  }
+
+  &.purple-btn {
+    padding: 1.1rem 1.5rem;
+    background: $purple-60;
+    border: none;
+
+    &:hover {
+      background-color: $purple-65;
+    }
+  }
+}
