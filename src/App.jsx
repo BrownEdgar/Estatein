@@ -1,10 +1,9 @@
-import React from 'react'
+import ClientSection from '../src/components/ClientSection'
 import './App.scss'
-
 export default function App() {
   return (
-    <div className='App container'>
-      <h1>Test</h1>
+    <div className='App'>
+      <ClientSection/>
     </div>
   )
 }

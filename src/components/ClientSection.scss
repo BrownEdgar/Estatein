@@ -1,0 +1,59 @@
+@import "../sass/color";
+@import "../sass/global";
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.desc {
+  color: $grey-60;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+}
+
+.title {
+  display: flex;
+  gap: 200px;
+
+}
+
+.counter {
+  border-top: 1px solid $main-bg;
+}
+
+.title-rate {
+  height: 30px;
+  background-color: transparent;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.title-btn {
+  display: flex;
+  align-items: flex-end;
+}
+
+button {
+  color: $btn-color;
+  background-color: $main-bg;
+  border: 0px solid $main-bg;
+  padding: 18px 24px 18px 24px;
+}
