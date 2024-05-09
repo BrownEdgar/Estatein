@@ -20,6 +20,17 @@
         width: 784px;
         gap: 24px;
     }
+    &_circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -510px;
+        margin-left: -700px;
+    }
+    &_circleImg {
+        width: 140px;
+        height: 140px;
+    }
     &_heading {
         width: 100%;
         margin-top: 110px;
@@ -34,7 +45,6 @@
     }
     &_paragraph {
         width: 758px;
-        // height: 47px;
         gap: 0px;
         opacity: 0px;
         font-family: "Urbanist", sans-serif;

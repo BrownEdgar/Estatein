@@ -40,6 +40,9 @@ function App() {
                         <p>Years of Experience</p>
                     </div>
                 </div>
+                <div className='App_circle'>
+                    <img className='App_circleImg' src=".//public/images/circle.png" alt="" />
+                </div>
                 <div className='App_bgImage'>
                         <img className='App_image' src=".//public/images/building.png" alt="" />
                 </div>
