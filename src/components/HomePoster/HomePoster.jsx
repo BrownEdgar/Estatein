@@ -40,13 +40,13 @@ function HomePoster() {
             </div>
           </div>
           <div className='HomePoster_circle'>
-            <img className='HomePoster_circleImg' src=".//public/images/circle.png" alt="" />
+            <img className='HomePoster_circleImg' src="/images/circle.png" alt="circle logo" />
           </div>
 
         </div>
       </div>
       <div className='HomePoster_bgImage'>
-        <img className='HomePoster_image' src=".//public/images/building.png" alt="" />
+        <img className='HomePoster_image' src="/images/building.png" alt="building" />
       </div>
     </div>
   )
