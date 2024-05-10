@@ -7,67 +7,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Properties_slider.scss";
+import { properties_slider_settings } from 'constants/sliderSettings';
 
 export function SliderProperties() {
   const apartaments = useSelector(getApartments);
   const [scrolledSlides, setScrolledSlides] = useState(1);
 
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 1000,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1424,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 997,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
-  useEffect(() => {
-    const slideArrows = document.querySelectorAll(".slick-arrow");
-    slideArrows.forEach((arrow) => {
-      arrow.addEventListener("click", () => {
-        if (arrow.classList.contains("slick-prev") && scrolledSlides > 1) {
-          setScrolledSlides(scrolledSlides - 1);
-        }
-        if (
-          arrow.classList.contains("slick-next") &&
-          scrolledSlides <
-            Math.floor(apartaments.length / settings.slidesToShow)
-        ) {
-          setScrolledSlides(scrolledSlides + 1);
-        }
-      });
-    });
-  }, [scrolledSlides]);
 
   return (
     <div className="slider-container">
-      <Slider {...settings}>
+      <Slider {...properties_slider_settings}>
         {apartaments.map((apartament) => (
           <div className="apartament" key={apartament.id}>
             <div className="apartament_image">
