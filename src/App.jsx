@@ -1,10 +1,11 @@
 import React from 'react'
 import './App.scss'
+import HomePoster from '@/HomePoster/HomePoster'
 
 export default function App() {
   return (
     <div className='App container'>
-      <h1>Test</h1>
+      <HomePoster />
     </div>
   )
 }
