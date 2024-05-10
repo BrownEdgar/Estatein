@@ -8,24 +8,20 @@
   gap: 80px;
 }
 
-h1 {
-  font-weight: 600;
-}
+
 
 .desc {
   color: $grey-60;
 }
 
 .title-container {
-  display: flex;
-  justify-content: space-between;
   max-width: 1600px;
 }
 
 .title {
   display: flex;
   gap: 200px;
-
+  justify-content: space-between;
 }
 
 .counter {
