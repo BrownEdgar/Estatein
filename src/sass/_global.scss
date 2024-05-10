@@ -4,17 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "Urbanist";
-  src: url("./fonts/Urbanist-Bold.ttf");
-  src: url("./fonts/Urbanist-Light.ttf");
-  src: url("./fonts/Urbanist-Regular.ttf");
-  src: url("./fonts/Urbanist-SemiBold.ttf");
-  src: url("./fonts/Urbanist-Thin.ttf");
-}
 
 body {
-  font-family: "Urbanist";
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
   max-width: 1920px;
   margin: 0 auto;
   background-color: $main-bg;

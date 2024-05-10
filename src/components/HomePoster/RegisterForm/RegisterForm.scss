@@ -1,0 +1,38 @@
+.RegisterForm {
+  form {
+    width: 600px;
+    margin: 20px auto;
+    padding: 1em;
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 12px;
+      label {
+        font-variant: small-caps;
+        color: #999999;
+        font-weight: 900;
+        letter-spacing: 1px;
+        font-size: 18px;
+      }
+      input {
+        color: #999999;
+        width: 423px;
+        font-size: 20px;
+        height: 66px;
+        padding: 18px 24px;
+        border-radius: 12px;
+        border: 1px solid #5e5e5e;
+        background: transparent;
+        &[type="submit"] {
+          cursor: pointer;
+          color: #fff;
+          background-color: #703bf7;
+        }
+        &:focus {
+          outline: 1px solid greenyellow;
+        }
+      }
+    }
+  }
+}
