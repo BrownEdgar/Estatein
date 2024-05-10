@@ -28,15 +28,15 @@ function HomePoster() {
           <div className='HomePoster_score'>
             <div className='HomePoster_text'>
               <h1 className='HomePoster_number'>200+</h1>
-              <p>Happy Customers</p>
+              <p className='HomePoster_finalText'>Happy Customers</p>
             </div>
             <div className='HomePoster_text'>
               <h1 className='HomePoster_number'>10k+</h1>
-              <p>Properties For Clients</p>
+              <p className='HomePoster_finalText'>Properties For Clients</p>
             </div>
             <div className='HomePoster_text'>
               <h1 className='HomePoster_number'>16+</h1>
-              <p>Years of Experience</p>
+              <p className='HomePoster_finalText'>Years of Experience</p>
             </div>
           </div>
         </div>

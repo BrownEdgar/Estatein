@@ -45,7 +45,7 @@ body {
     text-align: left;
   }
   &_paragraph {
-    width: 758px;
+    width: 688px;
     color: #999;
     margin-top: 24px;
     font-size: 18px;
@@ -95,7 +95,7 @@ body {
     gap: 20px;
   }
   &_text {
-    width: 234px;
+    width: 204px;
     height: 116px;
     padding: 10px;
     font-weight: 700;
@@ -107,11 +107,15 @@ body {
   }
   &_number {
     font-weight: 900;
+    margin-left: 10px;
     color: #ffffff;
   }
-  &_bgImage {
-    margin-right: 100px;
+  &_finalText {
+    margin-left: 10px;
   }
+  // &_bgImage {
+    
+  // }
   &_image {
     width: 932px;
     background-repeat: no-repeat;
