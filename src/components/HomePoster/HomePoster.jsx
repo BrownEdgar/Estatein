@@ -28,7 +28,7 @@ function HomePoster() {
           <div className='HomePoster_score'>
             <div className='HomePoster_text'>
               <h1 className='HomePoster_number'>200+</h1>
-              <p>HHomePostery Customers</p>
+              <p>Happy Customers</p>
             </div>
             <div className='HomePoster_text'>
               <h1 className='HomePoster_number'>10k+</h1>
@@ -39,11 +39,10 @@ function HomePoster() {
               <p>Years of Experience</p>
             </div>
           </div>
-          <div className='HomePoster_circle'>
-            <img className='HomePoster_circleImg' src=".//public/images/circle.png" alt="" />
-          </div>
-
         </div>
+      </div>
+      <div className='HomePoster_circle'>
+        <img className='HomePoster_circleImg' src=".//public/images/circle.png" alt="" />
       </div>
       <div className='HomePoster_bgImage'>
         <img className='HomePoster_image' src=".//public/images/building.png" alt="" />
