@@ -12,16 +12,29 @@
   position: relative;
 }
 
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+h3 {
+  font-weight: 900;
+}
+
 .card {
   margin-right: 30px;
   display: flex;
-  min-height: 400px;
+  min-height: 420px;
   flex-direction: column;
   gap: 50px;
   border: 1px solid gray;
   border-radius: 12px;
   padding: 50px;
 }
+
+
 
 .person-data {
   display: flex;

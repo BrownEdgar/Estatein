@@ -38,19 +38,15 @@ export default function MultipleItems() {
     const slideArrows = document.querySelectorAll(".slick-arrow");
     slideArrows.forEach((arrow) => {
       arrow.addEventListener("click", () => {
-        if (arrow.classList.contains("slick-prev") && scrolledSlides > 1) {
-          setScrolledSlides(scrolledSlides - 1);
-        }
-        if (
-          arrow.classList.contains("slick-next") &&
-          scrolledSlides <
-          Math.floor(users.length / settings.slidesToShow)
-        ) {
-          setScrolledSlides(scrolledSlides + 1);
+        if (scrolledSlides < 2) {
+          setScrolledSlides(scrolledSlides + 1)
+        } else {
+          setScrolledSlides(1)
         }
       });
     });
   }, [scrolledSlides]);
+
   return (
     <div className="slider-container">
       <Slider {...settings}>
@@ -71,7 +67,7 @@ export default function MultipleItems() {
                       <img src={user.image} alt="person" className='person' />
                     </div>
                     <div className="data">
-                      <p>{user.nickName}</p>
+                      <b>{user.nickName}</b>
                       <p>{user.address}</p>
                     </div>
                   </div>
@@ -84,7 +80,8 @@ export default function MultipleItems() {
       <div className="slider__bottom">
         <div className="slider__scrolled-count">
           <span>
-            {scrolledSlides < 10 && scrolledSlides >= 0 ? (
+            0{scrolledSlides} of 0{Math.floor(users.length / 3)}
+            {/* {scrolledSlides < 10 && scrolledSlides >= 0 ? (
               <b>0{scrolledSlides}</b>
             ) : (
               <b>{scrolledSlides}</b>
@@ -92,7 +89,7 @@ export default function MultipleItems() {
             of <b>0</b>
             <span>
               {Math.floor(users?.length / settings.slidesToShow)}
-            </span>
+            </span> */}
           </span>
         </div>
       </div>
