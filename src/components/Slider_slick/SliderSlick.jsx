@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './SliderSlick.scss'
 
 
 export default function SimpleSlider() {
@@ -20,16 +21,16 @@ export default function SimpleSlider() {
     <Slider {...settings}>
       {slick.map(elem => {
         return(
-          <div key={elem.id} className="slider">
-            <div className="slider__content">
-              <div className="slider__title">
-                <h3>{elem.heading}</h3>
+          <div key={elem.id} className="slick">
+            <div className="slick__content">
+              <div className="slick__title">
+                <h2>{elem.heading}</h2>
               </div>
-              <div className="slider__paragraph">
+              <div className="slick__paragraph">
                 <p>{elem.paragraph}</p>
               </div>
-              <div className="slider__btn">
-                <p>{elem.button}</p>
+              <div className="slick__btn">
+                <button>{elem.button}</button>
               </div>
             </div>
           </div>
