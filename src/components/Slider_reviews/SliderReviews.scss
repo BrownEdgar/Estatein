@@ -1,0 +1,9 @@
+.sliderReviews{
+	&__text{
+		display: flex;
+		gap: 20px;
+		& > div{
+			width: 1240px;
+		}
+	}
+}
