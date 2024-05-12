@@ -1,4 +1,5 @@
 import React from 'react'
+import SliderSlick from '../Slider_slick/SliderSlick'
 import './SliderReviews.scss'
 
 export default function SliderReviews() {
@@ -18,6 +19,7 @@ export default function SliderReviews() {
           <button className='sliderReviews__btn'>View All FAQ's</button>
         </div>
       </div>
+      <SliderSlick/>
     </div>
   )
 }
