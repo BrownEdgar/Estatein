@@ -19,7 +19,9 @@ export default function SliderReviews() {
           <button className='sliderReviews__btn'>View All FAQ's</button>
         </div>
       </div>
-      <SliderSlick/>
+      <div className="sliderReviews__slider">
+        <SliderSlick/>
+      </div>
     </div>
   )
 }

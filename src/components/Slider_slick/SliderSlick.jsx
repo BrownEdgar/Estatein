@@ -13,22 +13,22 @@ export default function SimpleSlider() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3
   };
   return (
     <Slider {...settings}>
-      {slick.data.map(elem => {
+      {slick.map(elem => {
         return(
-          <div key={elem.id}>
-            <div className="content">
-              <div className="content__title">
+          <div key={elem.id} className="slider">
+            <div className="slider__content">
+              <div className="slider__title">
                 <h3>{elem.heading}</h3>
               </div>
-              <div className="content__paragraph">
+              <div className="slider__paragraph">
                 <p>{elem.paragraph}</p>
               </div>
-              <div className="content__btn">
+              <div className="slider__btn">
                 <p>{elem.button}</p>
               </div>
             </div>
