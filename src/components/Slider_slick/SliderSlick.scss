@@ -19,6 +19,35 @@
   &-arrow{
     position: absolute;
     top: 100%;
+    left: 100%;
+    border: 1px solid $border-grey;
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    padding: 10px;
+    z-index: 99;
+    &::before {
+      content: "";
+      display: inline-block;
+      background: url("/images/Button.png") no-repeat center / contain;
+      width: 58px;
+      height: 58px;
+      position: relative;
+      z-index: 1;
+    }
+    &.slick-prev,
+    &.slick-next {
+      top: 105%;
+    }
+    &.slick-prev {
+      left: 87%;
+      &::before {
+        rotate: -180deg;
+      }
+    }
+    &.slick-next {
+      left: 93%;
+    }
   }
   &-slide{
     border: 1px solid $border-grey;
@@ -33,6 +62,7 @@
       text-align: left;
       p{
         font-size: 17px;
+        color: $text-color-grey;
       }
     }
   }
