@@ -1,0 +1,35 @@
+@import "../../sass/color";
+
+.sliderReviews{
+	&__head{
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 100px;
+	}
+	&__title{
+		margin-bottom: 16px;
+	}
+	&__text{
+		font-size: 18px;
+		color: $main-text-color;
+		width: 1236px;
+	}
+	&__btn{
+		display: inline-block;
+		cursor: pointer;
+		border: 1px solid $border-grey;
+		padding: 18px 24px 18px 24px;
+		background-color: $button-background;
+		border-radius: 10px;
+		color: $main-text-color;
+		margin-top: 75px;
+		transition: 0.3s;
+	  &:hover{
+			scale: 1.1;
+		}
+	}
+	&__slider{
+		margin-top: 100px;
+	}
+}
