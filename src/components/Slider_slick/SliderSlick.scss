@@ -24,7 +24,6 @@
     border-radius: 50%;
     width: 58px;
     height: 58px;
-    padding: 10px;
     z-index: 99;
     &::before {
       content: "";
@@ -37,7 +36,7 @@
     }
     &.slick-prev,
     &.slick-next {
-      top: 105%;
+      top: 110%;
     }
     &.slick-prev {
       left: 87%;
