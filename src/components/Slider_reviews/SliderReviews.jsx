@@ -8,10 +8,10 @@ export default function SliderReviews() {
         <div className="sliderReviews__abstract">
           <img src="/images/Abstract_Design.png" alt="abstract" />
         </div>
-        <div className="sliderReviews__text">
+        <div className="sliderReviews__head">
           <div>
-            <h1>Frequently Asked Questions</h1>
-            <p>
+            <h1 className='sliderReviews__title'>Frequently Asked Questions</h1>
+            <p className='sliderReviews__text'>
               Find answers to common questions about Estatein's services, property listings, and the real estate  process. We're here to provide clarity and assist you every step of the way.
             </p>
           </div>
