@@ -1,0 +1,33 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    li {
+      font-size: 18px;
+      color: #FFFFFF;
+      padding: 14px 24px 14px 24px;
+    }
+    .active {
+      background-color: #262626;
+      border-radius: 8px;
+    }
+  }
+  .logo {
+    margin-left: 10px;
+    display: flex;
+    color: #fff;
+  }
+  button {
+    padding: 16px 24px 16px 24px;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: 10px;
+    background-color: #262626;
+
+  }
+}
