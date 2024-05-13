@@ -3,4 +3,47 @@
 
 .App {
   color: $main-text-color;
+  background-image:black;
+  .App_Desc{
+    margin-top: 15%;
+    height: 30px;
+    width: 300px;
+    p{
+      font-size: 13px;
+      color: rgb(216, 216, 216);
+    }
+  }
+  .App_content{
+    margin-left: 30%; 
+    border: 5px solid grey;
+    border-radius: 5px;
+    height: 300px;
+    width:900px;
+    p{
+      font-size: 14px;
+      margin-top: 3%;
+      color: rgb(216, 216, 216);
+      margin-right: 15%;
+    }
+    img{
+      height: 55px;
+    }
+    h2{
+      margin-top:4% ;
+    }
+    .name{
+      display: flex;
+      
+    }
+  }
+  .First_content{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+  .App_content_second{
+    display: flex;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
 }
