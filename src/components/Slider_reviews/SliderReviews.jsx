@@ -20,7 +20,7 @@ export default function SliderReviews() {
         </div>
       </div>
       <div className="sliderReviews__slider">
-        <SliderSlick/>
+        <SliderSlick />
       </div>
     </div>
   )

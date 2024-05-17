@@ -11,7 +11,7 @@ export default function SimpleSlider() {
   const slick = useSelector(getReviews)
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -20,7 +20,7 @@ export default function SimpleSlider() {
   return (
     <Slider {...settings}>
       {slick.map(elem => {
-        return(
+        return (
           <div key={elem.id} className="slick">
             <div className="slick__content">
               <div className="slick__title">

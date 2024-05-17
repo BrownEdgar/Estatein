@@ -1,25 +1,18 @@
-@import '../../sass/color';
+@import "../../sass/color";
 
-.slick{
-  &-slider{
+.slick {
+  &-slider {
     margin-top: 100px;
-    padding: 1rem;
     padding: 1em;
   }
-  &-list{
-    height: 100%;
-    width: 100%;
-  }
-  &-track{
+
+  &-track {
     display: flex;
     gap: 40px;
-    height: 100%;
-    width: 100%;
   }
-  &-arrow{
+  &-arrow {
     position: absolute;
-    top: 100%;
-    left: 100%;
+    top: 95%;
     border: 1px solid $border-grey;
     border-radius: 50%;
     width: 58px;
@@ -28,56 +21,60 @@
     &::before {
       content: "";
       display: inline-block;
-      background: url("/images/Button.png") no-repeat center / contain;
-      width: 58px;
-      height: 58px;
+      background: url("/images/arrow.png") no-repeat center / contain !important;
+      width: 18px;
+      height: 21px;
       position: relative;
       z-index: 1;
     }
-    &.slick-prev,
+
     &.slick-next {
-      top: 110%;
+      right: 10px;
     }
     &.slick-prev {
-      left: 87%;
+      right: 80px;
+      left: auto;
       &::before {
         rotate: -180deg;
       }
     }
-    &.slick-next {
-      left: 93%;
-    }
   }
-  &-slide{
+  &-slide {
     border: 1px solid $border-grey;
     padding: 50px;
     border-radius: 12px;
-    div{
+    div {
       display: flex;
       flex-direction: column;
       align-items: start;
       justify-content: center;
       gap: 30px;
       text-align: left;
-      p{
+      p {
         font-size: 17px;
         color: $text-color-grey;
       }
     }
   }
-  &__btn{
-    button{
-      display: inline-block;
+  &__btn {
+    button {
       cursor: pointer;
+      font-size: 18px;
       border: 1px solid $border-grey;
-      padding: 18px 24px 18px 24px;
+      padding: 18px 24px;
       background-color: $button-background;
       border-radius: 10px;
       color: $main-text-color;
       transition: 0.3s;
-      &:hover{
-        scale: 1.1;
+      &:hover {
+        scale: 1.03;
+        border-color: royalblue;
       }
     }
-	}
+  }
+}
+.slick-list {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid $border-grey;
 }
