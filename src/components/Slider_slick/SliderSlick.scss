@@ -1,0 +1,80 @@
+@import "../../sass/color";
+
+.slick {
+  &-slider {
+    margin-top: 100px;
+    padding: 1em;
+  }
+
+  &-track {
+    display: flex;
+    gap: 40px;
+  }
+  &-arrow {
+    position: absolute;
+    top: 95%;
+    border: 1px solid $border-grey;
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    z-index: 99;
+    &::before {
+      content: "";
+      display: inline-block;
+      background: url("/images/arrow.png") no-repeat center / contain !important;
+      width: 18px;
+      height: 21px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &.slick-next {
+      right: 10px;
+    }
+    &.slick-prev {
+      right: 80px;
+      left: auto;
+      &::before {
+        rotate: -180deg;
+      }
+    }
+  }
+  &-slide {
+    border: 1px solid $border-grey;
+    padding: 50px;
+    border-radius: 12px;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 30px;
+      text-align: left;
+      p {
+        font-size: 17px;
+        color: $text-color-grey;
+      }
+    }
+  }
+  &__btn {
+    button {
+      cursor: pointer;
+      font-size: 18px;
+      border: 1px solid $border-grey;
+      padding: 18px 24px;
+      background-color: $button-background;
+      border-radius: 10px;
+      color: $main-text-color;
+      transition: 0.3s;
+      &:hover {
+        scale: 1.03;
+        border-color: royalblue;
+      }
+    }
+  }
+}
+.slick-list {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid $border-grey;
+}
